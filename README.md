@@ -4,12 +4,12 @@ romsplit is a simple file splitter that splits binary files into a low byte and 
 
 ## How to use it
 
-romsplit needs at least one argument: '-i' or '--input'. Follow this argument with the path to the file you want split.
-The default output file names are 'high.bin' and 'low.bin' but you can change the names with the '-o' or '--output' argument.
+romsplit needs at least one argument: `-i` or `--input`. Follow this argument with the path to the file you want split.
+The default output file names are `high.bin` and `low.bin` but you can change the names with the `-o` or `--output` argument.
 
-You can change the endianness of the input file with the '-be' or '--bigEndian' and '-le' or '--littleEndian' argument. The endianness defines if the first byte of the input file is the high or low byte. For example the x86 architecture is little endian and the 68K architecture is big endian so the bytes are "swapped" in relation to one another. Having the low and high bytes swapped could lead to some "strange" behaviour and headscratching on the coders side (speaking from experience).
+You can change the endianness of the input file with the `-be` or `--bigEndian` and `-le` or `--littleEndian` argument. The endianness defines if the first byte of the input file is the high or low byte. For example the x86 architecture is little endian and the 68K architecture is big endian so the bytes are "swapped" in relation to one another. Having the low and high bytes swapped could lead to some "strange" behaviour and headscratching on the coders side (speaking from experience).
 
-All of the above things are also statet in the help section that can be accessed with the '-h' or '--help' argument.
+All of the above things are also statet in the help section that can be accessed with the `-h` or `--help` argument.
 
 ## Building
 
