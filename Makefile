@@ -9,7 +9,7 @@ all:
 	cp $(BUILD_PATH)out.a romsplit
 
 clean:
-	rm $(BUILD_PATH) -r
+	if test -d $(BUILD_PATH); then rm $(BUILD_PATH) -r; fi
 
 install: all
 	cp romsplit /usr/bin/
